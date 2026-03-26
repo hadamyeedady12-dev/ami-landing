@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AMI Interior | All Make It Premium</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-low": "#f6f3f2",
+                        "surface": "#fcf9f8",
+                        "tertiary-container": "#97b0ff",
+                        "surface-dim": "#dcd9d9",
+                        "secondary": "#5f5e5e",
+                        "on-primary-container": "#554300",
+                        "inverse-surface": "#313030",
+                        "surface-tint": "#735c00",
+                        "outline-variant": "#d0c5af",
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-primary": "#e9c349",
+                        "surface-container-high": "#ebe7e7",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#00174b",
+                        "tertiary": "#415ba4",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-secondary-container": "#656464",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "on-surface": "#1c1b1b",
+                        "surface-container": "#f0edec",
+                        "surface-container-highest": "#e5e2e1",
+                        "primary": "#735c00",
+                        "on-primary-fixed": "#241a00",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "outline": "#7f7663",
+                        "on-surface-variant": "#4d4635",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#254188",
+                        "surface-variant": "#e5e2e1",
+                        "primary-fixed-dim": "#e9c349",
+                        "primary-fixed": "#ffe088",
+                        "surface-bright": "#fcf9f8",
+                        "primary-container": "#d4af37",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "secondary-container": "#e5e2e1",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1c1b1b",
+                        "tertiary-fixed": "#dbe1ff",
+                        "on-secondary-fixed-variant": "#474646",
+                        "background": "#fcf9f8"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; letter-spacing: -0.02em; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(252, 249, 248, 0.8); backdrop-filter: blur(20px); }
+        .hero-gradient { background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%); }
+        .gold-gradient { background: linear-gradient(135deg, #735c00 0%, #d4af37 100%); }
+        /* From stats.html */
+        .tabular-nums { font-variant-numeric: tabular-nums; }
+        /* From reviews.html */
+        .star-filled { font-variation-settings: 'FILL' 1; }
+        /* From faq.html */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .expanded .accordion-content {
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-neutral-950 dark:bg-black docked full-width top-0 z-50 no-border tonal-transition shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<a href="#" class="flex items-center gap-0 group cursor-pointer">
+<img src="ami-logo-white.png" alt="AMI" class="h-10 w-auto" />
+</a>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-yellow-500 font-bold border-b border-yellow-500 pb-1 font-manrope text-sm tracking-tight" href="#">서비스 소개</a>
+<a class="text-neutral-400 hover:text-white transition-colors font-manrope text-sm tracking-tight" href="#">포트폴리오</a>
+<a class="text-neutral-400 hover:text-white transition-colors font-manrope text-sm tracking-tight" href="#">진행 과정</a>
+<a class="text-neutral-400 hover:text-white transition-colors font-manrope text-sm tracking-tight" href="#">서비스 신청</a>
+<a class="text-neutral-400 hover:text-white transition-colors font-manrope text-sm tracking-tight" href="#">회사 소개</a>
+</nav>
+<button class="bg-primary hover:bg-primary-container text-white px-6 py-2 rounded-sm font-manrope text-sm font-bold transition-all duration-300 scale-95 hover:scale-100">
+                상담 신청
+            </button>
+</div>
+</header>
+<!-- SideNavBar (Quick Menu) -->
+<aside class="fixed right-6 top-1/2 -translate-y-1/2 rounded-full py-6 px-2 w-16 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl shadow-2xl shadow-neutral-950/10 flex flex-col items-center gap-8 z-40">
+<div class="flex flex-col items-center gap-6">
+<a class="text-yellow-600 dark:text-yellow-500 scale-110 flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-manrope mt-1 opacity-0 group-hover:opacity-100 transition-opacity">홈으로</span>
+</a>
+<a class="text-neutral-500 dark:text-neutral-400 hover:scale-110 hover:text-yellow-600 transition-transform flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="text-[10px] font-manrope mt-1 opacity-0 group-hover:opacity-100 transition-opacity">카카오</span>
+</a>
+<a class="text-neutral-500 dark:text-neutral-400 hover:scale-110 hover:text-yellow-600 transition-transform flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="text-[10px] font-manrope mt-1 opacity-0 group-hover:opacity-100 transition-opacity">신청</span>
+</a>
+<a class="text-neutral-500 dark:text-neutral-400 hover:scale-110 hover:text-yellow-600 transition-transform flex flex-col items-center group" href="#">
+<span class="material-symbols-outlined" data-icon="article">article</span>
+<span class="text-[10px] font-manrope mt-1 opacity-0 group-hover:opacity-100 transition-opacity">블로그</span>
+</a>
+</div>
+</aside>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Luxury modern apartment interior with gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbQdQYUF3GORGc_Kd1hOWqEL4J4hscLx27hsa6OYBrmoCKDRFtXqaafJ1PIO2yFmOJDafRUf_HcLqG3VKttsnAajGD1I-ZR9BXcSxVq1qyokmCZHspUJrzhi-yzFUtHMvOK4pUkYQeF-LrTGlUSqsN9i7g3riqsmhHqOr_Y9_ZxGlUmFpRO-LKTsm0pOnGu5GvrJeUahZeJ_pEGkFT03na1zh6_BUJUOAAP_9MdRgiSOVEmeoPgH8WrpVHyfGdpS9dJS2S1X221Pw"/>
+<div class="absolute inset-0 bg-neutral-950/40"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full text-white flex flex-col items-center">
+<div class="max-w-4xl space-y-12 text-center flex flex-col items-center">
+<h1 class="text-5xl md:text-7xl font-bold font-headline leading-[1.1] tracking-tight">
+                        인테리어 시작부터 끝까지 <br/> 전부 해결합니다.
+                    </h1>
+<div class="w-64 h-64 md:w-80 md:h-80 rounded-full border border-white/20 backdrop-blur-md bg-white/5 flex flex-col items-center justify-center p-8 space-y-4 animate-fade-in">
+<p class="text-lg md:text-xl font-body opacity-90 font-light leading-relaxed">
+                            생각만 하세요. <br/> 나머지는 AMI가 해결합니다.
+                        </p>
+<span class="font-manrope font-bold text-primary-container text-xl tracking-widest uppercase">All Make It</span>
+</div>
+<div class="pt-4">
+<button class="gold-gradient text-white px-10 py-5 rounded-sm font-manrope text-lg font-bold shadow-xl hover:shadow-primary/20 transition-all hover:-translate-y-1">
+                            상담하기
+                        </button>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white flex flex-col items-center gap-2 opacity-50">
+<span class="text-xs tracking-widest font-manrope">SCROLL</span>
+<div class="w-[1px] h-12 bg-white/30 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1/2 bg-white animate-bounce"></div>
+</div>
+</div>
+</section>
+<!-- Service Introduction -->
+<section class="py-32 px-8 bg-[#FAFAFA]">
+<div class="max-w-screen-2xl mx-auto flex flex-col items-center">
+<div class="text-center mb-16 space-y-2">
+<h2 class="text-[32px] font-bold font-body text-[#111111]">지원서비스</h2>
+<p class="text-[16px] text-[#666666]">전략적가 보강, 최신의 서비스로 제공합니다</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+<!-- Card 1 -->
+<div class="group bg-white p-8 rounded-[16px] shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.10)] transition-all duration-300 hover:-translate-y-[2px]">
+<div class="mb-6">
+<span class="material-symbols-outlined text-[32px] text-[#D4A853]" data-icon="domain">domain</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-[#111111]">입주민 동의서</h3>
+<p class="text-[#666666] leading-relaxed mb-6 text-sm">
+                            특정 건물에 서비스를 제공하기 전에 해당 건물의 입주민들로부터 동의를 받는 문서.
+                        </p>
+<a class="text-[#137fec] font-bold text-sm inline-flex items-center" href="#">자세히 보기 →</a>
+</div>
+<!-- Card 2 -->
+<div class="group bg-white p-8 rounded-[16px] shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.10)] transition-all duration-300 hover:-translate-y-[2px]">
+<div class="mb-6">
+<span class="material-symbols-outlined text-[32px] text-[#D4A853]" data-icon="elevator">elevator</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-[#111111]">승강기 보양</h3>
+<p class="text-[#666666] leading-relaxed mb-6 text-sm">
+                            건물 내의 설치된 승강기의 유지보수. 수리 및 안전 검사 등을 포함하는 서비스.
+                        </p>
+<a class="text-[#137fec] font-bold text-sm inline-flex items-center" href="#">자세히 보기 →</a>
+</div>
+<!-- Card 3 -->
+<div class="group bg-white p-8 rounded-[16px] shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.10)] transition-all duration-300 hover:-translate-y-[2px]">
+<div class="mb-6">
+<span class="material-symbols-outlined text-[32px] text-[#D4A853]" data-icon="description">description</span>
+</div>
+<h3 class="text-xl font-bold mb-4 text-[#111111]">행위허가</h3>
+<p class="text-[#666666] leading-relaxed mb-6 text-sm">
+                            서비스를 하기 위해 해당 행정기관의 대한 허가나 승인을 받는 서비스.
+                        </p>
+<a class="text-[#137fec] font-bold text-sm inline-flex items-center" href="#">자세히 보기 →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="text-center mb-24 space-y-4">
+<h2 class="text-4xl md:text-5xl font-bold font-headline">진행 과정</h2>
+<p class="text-secondary">AMI만의 체계적이고 투명한 프리미엄 공정 시스템</p>
+</div>
+<div class="relative">
+<!-- Central Line -->
+<div class="hidden lg:block absolute left-1/2 -translate-x-1/2 h-full w-[1px] bg-outline-variant/30"></div>
+<div class="space-y-24">
+<!-- Step 01 -->
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-0">
+<div class="lg:w-1/2 lg:pr-20 lg:text-right">
+<span class="text-primary font-manrope font-bold text-lg mb-2 block">STEP 01</span>
+<h3 class="text-2xl font-bold mb-4">상담 및 현장 방문</h3>
+<p class="text-secondary">공간의 가치를 발견하는 첫 걸음</p>
+</div>
+<div class="hidden lg:flex z-10 w-12 h-12 rounded-full bg-primary text-white items-center justify-center font-bold">1</div>
+<div class="lg:w-1/2 lg:pl-20">
+<div class="bg-surface p-1 shadow-xl">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="Initial consultation with blueprint and coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO1ZqxntfL024QAb93KfyEznC9z46gXG-W5cERh-6RSokf-veCFyjPabjbYSqA9w4iTPX7Im3e_VXG876FGEY2XzdS5dja78P8wWKHys6Oj18kbvpxNmL_XT6RixXPCCKFW8Fytb3x6DsKW0NY8_q3PfxrwYutBCNjW15vDyfC5e6Z8ogfuVs-YStruezflI33phXzkhDcugAvtrOhcHZYAU7hCdcksDB8grrU5ULYl990jYFPSLzuqDergmWRMZtAQUQQnxkoD_s"/>
+</div>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-0">
+<div class="lg:w-1/2 lg:pl-20">
+<span class="text-primary font-manrope font-bold text-lg mb-2 block">STEP 02</span>
+<h3 class="text-2xl font-bold mb-4">설계 및 견적</h3>
+<p class="text-secondary">투명하고 합리적인 공간 제안</p>
+</div>
+<div class="hidden lg:flex z-10 w-12 h-12 rounded-full bg-primary text-white items-center justify-center font-bold">2</div>
+<div class="lg:w-1/2 lg:pr-20">
+<div class="bg-surface p-1 shadow-xl">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="Architectural technical drawings and design phase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJjcP7ZHgM_J41mh3mNjU5uG5XY5fxTNJyFWTRp9gOXWlC6iyzjPCDJNBZJgiOmromHNt4CxIxOF6K1wzhQ5h4xU-aeQlhsYWu6vidtTHZPmEVzuX8WbWOQF4KpNGrL6cyZtNHcPnhBEjF0OrZqQ5x-_2Ywa0_buVmJsIdXQM9WQ0ztk_LZotRNHAa8rFxAb3z5LbQs1GGEIa9CKvVQP313maUl5_Bdn3uf5CVCS7JjmWf3fQisCxljUAYoSjM7tfwLRHqFRrNrH4"/>
+</div>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-0">
+<div class="lg:w-1/2 lg:pr-20 lg:text-right">
+<span class="text-primary font-manrope font-bold text-lg mb-2 block">STEP 03</span>
+<h3 class="text-2xl font-bold mb-4">계약 및 착공 준비</h3>
+<p class="text-secondary">완벽한 시공을 위한 철저한 사전 점검</p>
+</div>
+<div class="hidden lg:flex z-10 w-12 h-12 rounded-full bg-primary text-white items-center justify-center font-bold">3</div>
+<div class="lg:w-1/2 lg:pl-20">
+<div class="bg-surface p-1 shadow-xl">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="Signing contract and preparing for construction site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjgMYyEtexycgCW5FhdTnh9gDqBTYwyP1KuhDbS7wv5GlHpHzDxzFAE5pr76xq2zrL_cqtu9zfRUGhwhiYqSir8ganxqCYIkNfghSHzlEg65t7KWjgNBQ91TQg8-me5E69k3XCl3QxTOWFNKjHuIMCmS3HnJhUbe_Lj0gyRKzzkSKtJ7KGVZIt-ES-U6dzEorApbdAK4KFFUpPes4ABwcwP8WQi8Qd3ZEuehra5-o4jT7WPhMFhMtTwrXEctOj47VvRLyv6fRlN2E"/>
+</div>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-0">
+<div class="lg:w-1/2 lg:pl-20">
+<span class="text-primary font-manrope font-bold text-lg mb-2 block">STEP 04</span>
+<h3 class="text-2xl font-bold mb-4">시공 진행</h3>
+<p class="text-secondary">정교한 기술로 완성되는 프리미엄 공간</p>
+</div>
+<div class="hidden lg:flex z-10 w-12 h-12 rounded-full bg-primary text-white items-center justify-center font-bold">4</div>
+<div class="lg:w-1/2 lg:pr-20">
+<div class="bg-surface p-1 shadow-xl">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="Active high-end construction site with modern materials" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq-oUmswDr1r0fHMN_syDqBOFrIHWgQkv32qHpk2e5CnJ3HHDgPTLPnvtN7rhUAvMQ74cfEOcX9tkGluypxpKWfGwT3qfMIWyy3qbZH0PCYqm7hyXOLNI9V_Z13RMB7H1j4aqJmfsDOCHywWM5r_WSqr7oI1A6YRxBWxkHS4GZ__mWs2lk3FMpICtoTFhwg_0S_QE7GF1kzT3kNR91456cJPqGIPTJ8likZnPV3d4VEND01Z6OWEguMNDUjmDEijFhVeMZExlqOpQ"/>
+</div>
+</div>
+</div>
+<!-- Step 05 -->
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-0">
+<div class="lg:w-1/2 lg:pr-20 lg:text-right">
+<span class="text-primary font-manrope font-bold text-lg mb-2 block">STEP 05</span>
+<h3 class="text-2xl font-bold mb-4">완료 보고 및 사후 관리</h3>
+<p class="text-secondary">고객 만족을 위한 책임 있는 마무리</p>
+</div>
+<div class="hidden lg:flex z-10 w-12 h-12 rounded-full bg-primary text-white items-center justify-center font-bold">5</div>
+<div class="lg:w-1/2 lg:pl-20">
+<div class="bg-surface p-1 shadow-xl">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="Finished luxury office or residential space interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHeOr5HXzCTYgPuOEt4FBifYgwghhpTktkXeWfjN45ov78l30ni6fdM_TFumd_DzwWpYkLuMqzK901QKNJ-S60PsX8jE_14V18VRIFXhSkqca-OlIUkjnNIfcjua8b-ep7TmsNJTVvssCGHzL3vZ2hbOhQhpT6_FF7QhpWIX-o1w8JGRfeyrhnXxkjCxtZdFlJrR69GHIq8JQv8xXrGw4_3ngvcLE8EdOycT0lNhLOKpvzhlMhgYSAIcqz6aisJLqp2oxLf51OqLc"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Construction Cases (Portfolio Gallery) -->
+<section class="py-32 bg-surface overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-8">
+<div class="space-y-4">
+<h2 class="text-4xl md:text-5xl font-bold font-headline">시공사례</h2>
+<p class="text-secondary font-body">AMI에서 진행한 시공 사례입니다</p>
+</div>
+<!-- Category Tabs -->
+<div class="flex flex-wrap gap-4 md:gap-8">
+<button class="font-manrope text-sm font-bold border-b-2 border-primary text-primary pb-1 tracking-widest transition-all">ALL</button>
+<button class="font-manrope text-sm font-medium text-secondary hover:text-primary pb-1 tracking-widest transition-all">입주민동의</button>
+<button class="font-manrope text-sm font-medium text-secondary hover:text-primary pb-1 tracking-widest transition-all">승강기보양</button>
+<button class="font-manrope text-sm font-medium text-secondary hover:text-primary pb-1 tracking-widest transition-all">행위허가</button>
+</div>
+<a class="group flex items-center gap-2 text-primary font-manrope font-bold text-sm" href="#">
+                        VIEW ALL PROJECTS
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Minimalist living room with marble and wood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdo3HrnPNYDCEIf9m_sA4n8k-DdzFQcJt4IePN-yDtJZ-i7kG9oKVTAwTcLhV2m4J-XQ3JnNtswUpNg0WnvI5PLSCokaGU0gMaEBWCE46WpoVfJoo_zlv1Htpnuhh2R8NwAm-YQFcRDeTLiyDJXMq6jITJ_vhivI6NitKq02KGNoXxQVPHG0IDVtPUAoKLh8BlyuJ7rzJgAKF-SWtZgwK9teuuWEc6eXWCDqtVOEYmKv-Mu8CHTXdFEVuPJj0PY4jKamjTJueH4Ig"/>
+<div class="absolute inset-0 bg-neutral-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-primary font-manrope text-xs tracking-widest mb-2">RESIDENTIAL</span>
+<h4 class="text-white text-2xl font-bold">The Marble Penthouse</h4>
+<p class="text-neutral-400 text-sm mt-2">Seoul, Hannam-dong</p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Bespoke furniture and art collection interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXUhswaFoY1FOe5jF_thso7fJQH_6B-0FLDwKQm1rZUleS5316Bb41iiUAJFu_I51enBk3j0Z9IicHJBNTnsKU7NKkNNfkWa276y4hJHjzv0EEo1crkR9txJAvmQiGHOLjOoKv8LcCLX2xZ3DYC9QeMTiBzz28biMocwd1tNG02UFwjWYpTkNMPFVV1Vov6a1cpJe4ofDYwy7TOhen_eP3APMBFHlu40ls6zIfxEwMlTb1-dGvr5MK60BhkvGyfIu-ICxBTutgcGo"/>
+<div class="absolute inset-0 bg-neutral-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-primary font-manrope text-xs tracking-widest mb-2">COMMERCIAL</span>
+<h4 class="text-white text-2xl font-bold">Artisan Studio Lounge</h4>
+<p class="text-neutral-400 text-sm mt-2">Gangnam, Sinsa-dong</p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container lg:translate-y-12">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Modern geometric architectural interior concept" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw2Jm6um8oPRAoLUZiX1oOf4iuHl26llsdFIlLPsAEsN_mZBZh3diI2CyCpbVEDQm6uKDiJ-ldhGXjpyMZ8BNaLZReBDrMtAAZxko47y0KHMDhd5JexHjWlv7MZk2D4KmGcrIukjKF0Wrq9JcBSNQfGfzGn4183YPtkNbYUMIplrUX7jRSocc9Ft_vkGzUQmv8yuKyZOiO0tNnLwRDc1kOfblkbhb2WZO2rEgi2EPXrj8JONThqy8d-QWLBYluenF3pD2wZVR9QzE"/>
+<div class="absolute inset-0 bg-neutral-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-primary font-manrope text-xs tracking-widest mb-2">LUXURY OFFICE</span>
+<h4 class="text-white text-2xl font-bold">AMI Creative Hub</h4>
+<p class="text-neutral-400 text-sm mt-2">Seongsu, Seoul</p>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="High-end modern kitchen with stone island" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAivCgJFvefvNDTZTkkVU9jb8WwHkW9wyI3Wpz-tRxeWhUFVC_6a_xK2o5Mhbur-_qQth1nWkwwqy74HX4w2srjdOgeLT_2TPb-im2C5p2bIuo2QMa_50kpb-ezhV4u7tTQIUHaCB4JDBIgCDsTF8aZOTdKCTCd0RG8sYAEr1J_sqWw5Rq1B-LxbCla0E2Cyd2JHPrGlQXZQRe8-rdcAvmD2SaW2PocZ5qoIljaz2c6xApls5WAWYAtz0VVRqp_rntxtY0JEwxlYM"/>
+<div class="absolute inset-0 bg-neutral-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-primary font-manrope text-xs tracking-widest mb-2">RESIDENTIAL</span>
+<h4 class="text-white text-2xl font-bold">Stone Island Kitchen</h4>
+<p class="text-neutral-400 text-sm mt-2">Yongsan, Seoul</p>
+</div>
+</div>
+<!-- Project 5 -->
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Luxury bedroom with velvet textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx7vnIVJcxpcdR28W3OuWhOFkiWHOj3VrOHro9R0g7953hOPWnooabHnHyJSBYvyHuF0jLtUFcQINkqsAVr1drFuVAAAiPw1Et90eYNNltbDixCSequCq_5sU4RbG0DI1PM93WrLx55E1PYu8pnlUwkESdl0LizZPn8nJHXYD9FJRl1PgmZKC7Nczagap0CcvNplMNnArZjno6hEmBIiDvHTW2oYVKn3p-p4VWyzEMxVthxyFO07wMBFDVtjzb1UcQGvn0xb6zZgQ"/>
+<div class="absolute inset-0 bg-neutral-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-primary font-manrope text-xs tracking-widest mb-2">RESIDENTIAL</span>
+<h4 class="text-white text-2xl font-bold">Velvet Night Suite</h4>
+<p class="text-neutral-400 text-sm mt-2">Busan, Haeundae</p>
+</div>
+</div>
+<!-- Project 6 -->
+<div class="group relative aspect-[4/5] overflow-hidden bg-surface-container lg:translate-y-12">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Sleek modern bathroom with gold fixtures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs58vC_fvB5kU9K8jqHGbCQN_nsd_XIA4LIoEM2lF7pki4EzmPPWuxucEs6n32itnvSZgMxQPkxPhwg8z4YZAtwmKJH3l6u-m3Gisk6052C-SKbqfz_lrIEexi-LhgySR7-7eXgtnMHhQGHwSLOjOntEtNopDusDR1JSxoGFzPfazLiW2nxxtOp4k2oNPRRkA9S9VvlFHJ1RPSDuJjexAWRSofZro7QpVJTC6nqb1G3F2fEnCU4r5yk6PvhtZGFitxyCmDGNm48vY"/>
+<div class="absolute inset-0 bg-neutral-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-primary font-manrope text-xs tracking-widest mb-2">RESIDENTIAL</span>
+<h4 class="text-white text-2xl font-bold">The Golden Sanctuary</h4>
+<p class="text-neutral-400 text-sm mt-2">Seongnam, Pangyo</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== INSERTED: Stats Section (from stats.html) ========== -->
+<section class="bg-surface-container-lowest py-[80px] w-full">
+<div class="max-w-7xl mx-auto px-6">
+<!-- TOP AREA (Center-aligned) -->
+<div class="text-center mb-[56px]">
+<span class="block text-[12px] font-bold tracking-[3px] text-primary-container mb-3 uppercase">AMI IN NUMBERS</span>
+<h2 class="text-[36px] text-on-background font-bold font-headline tracking-tight">숫자로 보는 AMI</h2>
+</div>
+<!-- STAT ITEMS (4 in a row) -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-y-12 md:gap-0 items-center">
+<!-- Item 1 -->
+<div class="flex flex-col items-center justify-center relative md:border-r border-[#E8E8E8] px-4">
+<div class="w-[2px] h-[32px] bg-primary-container mb-4"></div>
+<div class="text-[64px] font-extrabold text-on-background tabular-nums leading-none mb-2">500+</div>
+<div class="text-[15px] text-secondary font-medium">누적 시공 건수</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col items-center justify-center relative md:border-r border-[#E8E8E8] px-4">
+<div class="w-[2px] h-[32px] bg-primary-container mb-4"></div>
+<div class="text-[64px] font-extrabold text-on-background tabular-nums leading-none mb-2">98%</div>
+<div class="text-[15px] text-secondary font-medium">고객 만족도</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col items-center justify-center relative md:border-r border-[#E8E8E8] px-4">
+<div class="w-[2px] h-[32px] bg-primary-container mb-4"></div>
+<div class="text-[64px] font-extrabold text-on-background tabular-nums leading-none mb-2">15년+</div>
+<div class="text-[15px] text-secondary font-medium">인테리어 경력</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col items-center justify-center px-4">
+<div class="w-[2px] h-[32px] bg-primary-container mb-4"></div>
+<div class="text-[64px] font-extrabold text-on-background tabular-nums leading-none mb-2">200+</div>
+<div class="text-[15px] text-secondary font-medium">시공 후 A/S 완료</div>
+</div>
+</div>
+<!-- BOTTOM ACCENT (Centered) -->
+<div class="mt-[48px] flex flex-col items-center">
+<div class="w-[120px] h-[2px] bg-primary-container"></div>
+<p class="mt-[16px] text-[14px] text-[#999999] tracking-wide font-light">신뢰할 수 있는 파트너, AMI Interior</p>
+</div>
+</div>
+</section>
+
+<!-- ========== INSERTED: Reviews Section (from reviews.html) ========== -->
+<section class="w-full bg-[#1A1A1A] py-20 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<!-- Top Area -->
+<div class="text-center mb-14">
+<span class="block text-[#D4A853] text-[12px] tracking-[3px] font-bold mb-4">CLIENT REVIEWS</span>
+<h2 class="text-[36px] text-white font-bold mb-4 font-body">고객님들의 이야기</h2>
+<p class="text-[16px] text-[#999999] font-body">총 500건 이상 시공 완료</p>
+</div>
+<!-- Testimonial Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group bg-[#222222] rounded-[16px] p-[28px] border border-[#2A2A2A] transition-colors duration-300 hover:border-[#D4A853]">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+</div>
+<p class="text-[#E0E0E0] text-[15px] leading-[1.7] min-h-[100px] mb-5">처음 인테리어라 걱정이 많았는데, 설계 단계부터 꼼꼼하게 설명해주셔서 믿고 맡길 수 있었어요. 완성된 공간을 보고 감동했습니다.</p>
+<div class="h-[1px] bg-[#333333] w-full mb-5"></div>
+<div class="flex flex-col mb-5">
+<span class="text-white text-[15px] font-bold">김 O O</span>
+<span class="text-[#999999] text-[13px]">아파트 30평 전체 리모델링</span>
+</div>
+<div class="relative w-full h-[180px] bg-[#2A2A2A] rounded-lg overflow-hidden flex items-center justify-center">
+<img alt="Luxury Living Room Interior" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Modern high-end luxury living room with warm ambient lighting, beige marble floors, and elegant designer furniture in a minimal architectural style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArecZF0SzeKP0Mi0Kg4kwfher7eqQjAFoIRhKRyCzP5A9wqu5fVvLKwoKOfydU-ladevbOs4LlJhbOxMRmeelnjfpstXwF8DxY7AvC4WstYBs2REK0wr6y1EVK40LCeZHCKx4CNf44NM_a6FVIotps1WjrxcDDPqqSO-9F1h0ynzDVj3Ukz5N-e_dDUloU3oYDlQ7_BTSmz1ovXBtSJI8XDJyMaRgq3yAiGWFKHcz6Az7sCt5sNkRKeQ55YxGR3GFoEbpoygRTNs0"/>
+<span class="relative z-10 text-white text-[14px] font-medium tracking-tight">시공 전/후 사진</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-[#222222] rounded-[16px] p-[28px] border border-[#2A2A2A] transition-colors duration-300 hover:border-[#D4A853]">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+</div>
+<p class="text-[#E0E0E0] text-[15px] leading-[1.7] min-h-[100px] mb-5">오피스 인테리어를 의뢰했는데, 직원들 동선까지 고려한 설계에 놀랐습니다. 업무 효율이 체감될 정도로 달라졌어요.</p>
+<div class="h-[1px] bg-[#333333] w-full mb-5"></div>
+<div class="flex flex-col mb-5">
+<span class="text-white text-[15px] font-bold">박 O O</span>
+<span class="text-[#999999] text-[13px]">오피스 50평 신규 인테리어</span>
+</div>
+<div class="relative w-full h-[180px] bg-[#2A2A2A] rounded-lg overflow-hidden flex items-center justify-center">
+<img alt="Modern Minimalist Office Space" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Sleek corporate office interior with glass walls, ergonomic stations, and soft recessed ceiling lighting creating a professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2xsj6XPD1IBGlIzY4loo2Wblwt3P-kQsH0hl6Q_QabJtqPymWLi3zpE6wAbjPpHfGCV_l8pyj2ge8R5oKPAcVW87freNWAAyyfw3MFtdKXxSqgzOOG_2iVHPItBq-XXmcmMheB2fete_mCBp4-xE6U9KnSz3bDymceWdb3XUKc-EyXkm3bOv3C7nSigoevVhYNEd5SMtxZC66PSaNuoSTMMcDgDvvjtU4oy_q7fvwt0ElNM6RW3uf9Rk3EuojzttgUdBBwcMVUlA"/>
+<span class="relative z-10 text-white text-[14px] font-medium tracking-tight">시공 전/후 사진</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-[#222222] rounded-[16px] p-[28px] border border-[#2A2A2A] transition-colors duration-300 hover:border-[#D4A853]">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+<span class="material-symbols-outlined text-[#D4A853] text-[16px] star-filled">star</span>
+</div>
+<p class="text-[#E0E0E0] text-[15px] leading-[1.7] min-h-[100px] mb-5">시공 중 매일 현장 사진을 보내주시고, A/S도 빠르게 대응해 주셨습니다. 주변에 적극 추천하고 있어요.</p>
+<div class="h-[1px] bg-[#333333] w-full mb-5"></div>
+<div class="flex flex-col mb-5">
+<span class="text-white text-[15px] font-bold">이 O O</span>
+<span class="text-[#999999] text-[13px]">아파트 25평 부분 리모델링</span>
+</div>
+<div class="relative w-full h-[180px] bg-[#2A2A2A] rounded-lg overflow-hidden flex items-center justify-center">
+<img alt="Luxury Apartment Detail" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Detailed close-up of premium interior finishes including brushed gold hardware and dark walnut textures in a boutique apartment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmUBI61aSKb-8EFJcY8Ht3Xz9YLdQ4sYtj4CaEzyYn-vlLBq-i6DFIIWd2n7veVUYliV0Y9mypZOB2A62L5zYVdf5XyJo2hBPV6kiho90jSH_XbfQS4gYKkgKdUru0wC4b5VjjhdDeDhuMP-H0dltYUF552JfW8MQE6xPNXNYcG9T0fxNxZKw1mPa-Q5MRROwwRXr9lwc6IAVtXP2RrhJOMi-psiU6YjbkYYwQh1jGXF3of6srH1PQlwTrlJ05VsnI4XQuP2wwvfU"/>
+<span class="relative z-10 text-white text-[14px] font-medium tracking-tight">시공 전/후 사진</span>
+</div>
+</div>
+</div>
+<!-- Bottom Area -->
+<div class="mt-12 flex flex-col md:flex-row justify-center items-center gap-4">
+<button class="w-full md:w-auto px-8 py-4 bg-[#FEE500] text-[#1A1A1A] text-[15px] font-bold rounded-[12px] hover:opacity-90 transition-opacity">
+                    카카오 리뷰 보기
+                </button>
+<button class="w-full md:w-auto px-8 py-4 bg-transparent border border-[#03C75A] text-[#03C75A] text-[15px] font-bold rounded-[12px] hover:bg-[#03C75A]/10 transition-colors">
+                    네이버 플레이스 리뷰
+                </button>
+</div>
+</div>
+</section>
+
+<!-- ========== INSERTED: FAQ Section (from faq.html) ========== -->
+<section class="bg-[#F8F8F8] py-20">
+<div class="max-w-4xl mx-auto px-6">
+<!-- Top Area -->
+<div class="text-center mb-10">
+<span class="text-[12px] tracking-[3px] text-[#D4A853] font-bold uppercase block mb-3">FAQ</span>
+<h2 class="text-[32px] font-bold text-[#111111] font-headline mb-2">자주 묻는 질문</h2>
+<p class="text-[14px] text-[#999999]">궁금한 점이 있으시면 먼저 확인해 보세요</p>
+</div>
+<!-- Accordion Area -->
+<div class="space-y-[12px] mb-12">
+<!-- Q1 -->
+<div class="faq-item bg-white rounded-xl p-6 shadow-[0_1px_4px_rgba(0,0,0,0.04)] border-none">
+<div class="faq-toggle flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+<span class="text-[16px] font-semibold text-[#111111]">입주민 동의서는 어떻게 진행되나요?</span>
+<span class="material-symbols-outlined text-[#D4A853] faq-icon">add</span>
+</div>
+<div class="accordion-content">
+<p class="text-[14px] text-[#666666] leading-[1.7] pt-4">
+                            건물 내 공사 진행 시 입주민들의 동의를 받는 과정입니다. AMI가 서류 작성부터 동의서 수거, 관리사무소 제출까지 전 과정을 대행합니다. 통상 3~5일 이내 완료됩니다.
+                        </p>
+</div>
+</div>
+<!-- Q2 -->
+<div class="faq-item bg-white rounded-xl p-6 shadow-[0_1px_4px_rgba(0,0,0,0.04)] border-none">
+<div class="faq-toggle flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+<span class="text-[16px] font-semibold text-[#111111]">승강기 보양 비용은 얼마인가요?</span>
+<span class="material-symbols-outlined text-[#D4A853] faq-icon">add</span>
+</div>
+<div class="accordion-content">
+<p class="text-[14px] text-[#666666] leading-[1.7] pt-4">
+                            건물 규모와 승강기 수량에 따라 달라지며, 현장 방문 후 정확한 견적을 안내드립니다. 무료 상담을 통해 먼저 확인해 보세요.
+                        </p>
+</div>
+</div>
+<!-- Q3 -->
+<div class="faq-item bg-white rounded-xl p-6 shadow-[0_1px_4px_rgba(0,0,0,0.04)] border-none">
+<div class="faq-toggle flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+<span class="text-[16px] font-semibold text-[#111111]">행위허가 신청 대행 기간은?</span>
+<span class="material-symbols-outlined text-[#D4A853] faq-icon">add</span>
+</div>
+<div class="accordion-content">
+<p class="text-[14px] text-[#666666] leading-[1.7] pt-4">
+                            구청/관할 행정기관의 처리 기간에 따라 다르지만, 서류 준비부터 신청까지 AMI가 전담 처리합니다. 보통 1~2주 내 결과를 받으실 수 있습니다.
+                        </p>
+</div>
+</div>
+<!-- Q4 -->
+<div class="faq-item bg-white rounded-xl p-6 shadow-[0_1px_4px_rgba(0,0,0,0.04)] border-none">
+<div class="faq-toggle flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+<span class="text-[16px] font-semibold text-[#111111]">시공 후 A/S는 어떻게 되나요?</span>
+<span class="material-symbols-outlined text-[#D4A853] faq-icon">add</span>
+</div>
+<div class="accordion-content">
+<p class="text-[14px] text-[#666666] leading-[1.7] pt-4">
+                            AMI는 시공 완료 후 1년간 무상 A/S를 제공합니다. 문제 발생 시 전담 매니저에게 연락하시면 48시간 내 대응합니다.
+                        </p>
+</div>
+</div>
+<!-- Q5 -->
+<div class="faq-item bg-white rounded-xl p-6 shadow-[0_1px_4px_rgba(0,0,0,0.04)] border-none">
+<div class="faq-toggle flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+<span class="text-[16px] font-semibold text-[#111111]">상담 비용이 있나요?</span>
+<span class="material-symbols-outlined text-[#D4A853] faq-icon">add</span>
+</div>
+<div class="accordion-content">
+<p class="text-[14px] text-[#666666] leading-[1.7] pt-4">
+                            아니요. 현장 방문 상담 및 견적은 모두 무료입니다. 부담 없이 문의해 주세요.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Bottom CTA Area -->
+<div class="text-center pt-12">
+<p class="text-[14px] text-[#999999] mb-4">더 궁금한 점이 있으시면</p>
+<button class="bg-[#D4A853] text-white text-[14px] font-bold h-[48px] w-[200px] rounded-xl hover:opacity-90 transition-opacity active:scale-95">
+                    무료 상담 신청
+                </button>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-40 bg-neutral-950 text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-0 left-0 w-1/4 h-1/2 bg-primary/10 blur-[100px] rounded-full"></div>
+<div class="max-w-4xl mx-auto px-8 text-center relative z-10 space-y-12">
+<h2 class="text-4xl md:text-6xl font-bold font-headline leading-tight">
+                    공간이 일상의 영감이 되도록 <br/>
+                    지금 바로 상담해 보세요
+                </h2>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6">
+<button class="w-full md:w-auto bg-[#FEE500] text-[#191919] px-12 py-5 rounded-sm font-bold flex items-center justify-center gap-3 transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        카카오 상담
+                    </button>
+<button class="w-full md:w-auto gold-gradient text-white px-12 py-5 rounded-sm font-bold flex items-center justify-center gap-3 transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined" data-icon="edit_calendar" style="font-variation-settings: 'FILL' 1;">edit_calendar</span>
+                        서비스 신청하기
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-50 dark:bg-neutral-950 full-width py-20 px-8 tonal-shift surface-container-low flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<img src="ami-logo-dark.png" alt="AMI" class="h-8 w-auto" />
+</div>
+<p class="font-manrope text-xs leading-relaxed text-neutral-500 max-w-xs">
+                    프리미엄 공간 솔루션을 제공하는 AMI Interior (All Make It)는 공간의 가치를 이해하고, 디자인부터 사후 관리까지 모든 과정을 전담합니다.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-on-surface text-sm uppercase tracking-widest">CS CENTER</h4>
+<div class="space-y-2">
+<p class="text-2xl font-bold text-primary">1588-0000</p>
+<p class="font-manrope text-xs leading-relaxed text-neutral-500">
+                        Weekday 09:00 - 18:00 <br/>
+                        Lunch 12:00 - 13:00 <br/>
+                        Saturday, Sunday, Holiday OFF
+                    </p>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-on-surface text-sm uppercase tracking-widest">LINKS</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-neutral-500 hover:text-yellow-600 transition-colors font-manrope text-xs leading-relaxed" href="#">회사 소개</a>
+<a class="text-neutral-500 hover:text-yellow-600 transition-colors font-manrope text-xs leading-relaxed" href="#">이용약관</a>
+<a class="text-neutral-500 hover:text-yellow-600 transition-colors font-manrope text-xs leading-relaxed" href="#">개인정보처리방침</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-on-surface text-sm uppercase tracking-widest">COMPANY INFO</h4>
+<p class="font-manrope text-xs leading-relaxed text-neutral-500">
+                    상호명: AMI Interior (All Make It) <br/>
+                    대표이사: 홍길동 | 사업자번호: 000-00-00000 <br/>
+                    주소: 서울특별시 강남구 도산대로 123, 5층 <br/>
+                    이메일: contact@ami-interior.com
+                </p>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-20 pt-8 border-t border-neutral-200 dark:border-neutral-800">
+<p class="font-manrope text-xs leading-relaxed text-neutral-500 opacity-80">© 2024 AMI Interior. All Rights Reserved.</p>
+</div>
+</footer>
+
+<!-- FAQ Accordion Toggle Script -->
+<script>
+function toggleFaq(trigger) {
+    var item = trigger.closest('.faq-item');
+    var icon = trigger.querySelector('.faq-icon');
+    var isExpanded = item.classList.contains('expanded');
+
+    // Close all other items
+    document.querySelectorAll('.faq-item').forEach(function(el) {
+        el.classList.remove('expanded');
+        el.querySelector('.faq-icon').textContent = 'add';
+    });
+
+    // Toggle current item
+    if (!isExpanded) {
+        item.classList.add('expanded');
+        icon.textContent = 'remove';
+    }
+}
+</script>
+</body></html>
