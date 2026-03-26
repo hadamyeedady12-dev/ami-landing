@@ -104,12 +104,29 @@
 <img src="ami-logo-white.png" alt="AMI" class="h-10 w-auto" />
 </a>
 <nav class="hidden md:flex items-center gap-12">
-<a class="text-yellow-500 font-bold border-b border-yellow-500 pb-1 font-manrope text-sm tracking-tight" href="#">서비스 소개</a>
+<div class="relative" id="nav-dropdown">
+  <button onclick="document.getElementById('service-menu').classList.toggle('hidden')" class="text-yellow-500 font-bold border-b border-yellow-500 pb-1 font-manrope text-sm tracking-tight flex items-center gap-1">
+    지원서비스 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+  </button>
+  <div id="service-menu" class="hidden absolute top-full left-0 mt-3 w-48 bg-white rounded-lg shadow-2xl shadow-black/20 py-2 z-50">
+    <a href="#" class="block px-5 py-3 text-sm text-neutral-800 hover:bg-neutral-100 font-manrope font-medium">전체 서비스</a>
+    <a href="#" class="block px-5 py-3 text-sm text-neutral-800 hover:bg-neutral-100 font-manrope">엘베보양</a>
+    <a href="#" class="block px-5 py-3 text-sm text-neutral-800 hover:bg-neutral-100 font-manrope">동선보양</a>
+    <a href="#" class="block px-5 py-3 text-sm text-neutral-800 hover:bg-neutral-100 font-manrope">공사신고</a>
+    <a href="#" class="block px-5 py-3 text-sm text-neutral-800 hover:bg-neutral-100 font-manrope">행위허가</a>
+    <a href="#" class="block px-5 py-3 text-sm text-neutral-800 hover:bg-neutral-100 font-manrope">철거</a>
+    <a href="#" class="block px-5 py-3 text-sm text-neutral-800 hover:bg-neutral-100 font-manrope">설비</a>
+    <a href="#" class="block px-5 py-3 text-sm text-neutral-800 hover:bg-neutral-100 font-manrope">샤시시공</a>
+    <a href="#" class="block px-5 py-3 text-sm text-neutral-800 hover:bg-neutral-100 font-manrope">실리콘마감</a>
+    <a href="#" class="block px-5 py-3 text-sm text-neutral-800 hover:bg-neutral-100 font-manrope">콘크리트폴리싱</a>
+  </div>
+</div>
+<a class="text-neutral-400 hover:text-white transition-colors font-manrope text-sm tracking-tight" href="#">커뮤니티</a>
 <a class="text-neutral-400 hover:text-white transition-colors font-manrope text-sm tracking-tight" href="#">포트폴리오</a>
 <a class="text-neutral-400 hover:text-white transition-colors font-manrope text-sm tracking-tight" href="#">진행 과정</a>
-<a class="text-neutral-400 hover:text-white transition-colors font-manrope text-sm tracking-tight" href="#">서비스 신청</a>
 <a class="text-neutral-400 hover:text-white transition-colors font-manrope text-sm tracking-tight" href="#">회사 소개</a>
 </nav>
+<script>document.addEventListener('click',function(e){if(!document.getElementById('nav-dropdown').contains(e.target)){document.getElementById('service-menu').classList.add('hidden')}})</script>
 <button class="bg-primary hover:bg-primary-container text-white px-6 py-2 rounded-sm font-manrope text-sm font-bold transition-all duration-300 scale-95 hover:scale-100">
                 상담 신청
             </button>
